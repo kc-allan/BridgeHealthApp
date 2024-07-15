@@ -1,10 +1,123 @@
-# Bridge Health WebApp
-Maternal care in rural areas faces challenges in tracking health progress due to antiquated manual bookkeeping practices, raising concerns about privacy and data security. To address this, we developed a user-friendly web platform tailored for expectant mothers, prioritizing privacy while offering personalized healthcare management.
+# BridgeHealthApp
 
-Utilizing Hyper Text Markup Language (HTML) for webpage design and the Structured Systems Analysis and Design Methodology (SSADM) for system development, our innovative solution revolutionizes maternal healthcare delivery.
+Welcome to BridgeHealthApp, a Laravel + React Vite web application designed to manage health records for mothers during their pre and post-natal term. This application ensures that mothers have access to doctor consultations and necessary tools, and tips to help mothers especially in rural areas to manage their pregnancy with ease.
 
-Expectant mothers can create secure profiles on the platform, ensuring the confidentiality of sensitive medical information. Timely prompts enable symptom recording, appointment tracking, and access to essential health education materials, empowering informed decision-making. An integrated feature facilitates direct emergency communication with on-call doctors, ensuring prompt medical assistance.
+BridgeHealthApp is built to support mothers through their pregnancy journey by providing a comprehensive health management system. The application facilitates easy access to professional consultation, essential tips, and tools for managing pregnancy effectively.
 
-Furthermore, local hospitals can transition to digital record-keeping through the platform, enhancing privacy and efficiency compared to outdated manual methods. By streamlining information management and promoting proactive health monitoring, the platform reduces maternal and infant mortality rates in rural areas.
+## Features
 
-By leveraging technology and prioritizing privacy concerns, the system facilitates seamless communication between expectant mothers and healthcare providers, ultimately improving maternal healthcare outcomes. This documentation outlines our comprehensive approach and the steps taken to achieve these goals.
+- **User Authentication:** Secure registration and login for mothers and doctors.
+- **Profile Management:** Update and manage user profiles.
+- **Health Records:** Record and access health records and symptom logs.
+- **Appointments:** Schedule and manage appointments with doctors.
+- **Tips and Tools:** Access personalized tips and tools for pregnancy management.
+- **Emergency Support:** Quick access to emergency toll-free numbers.
+- **Notifications:** Receive email notifications for appointment confirmations and reminders.
+- **Analytics:** Track and view health analytics for better insights.
+
+## Technologies Used
+
+- **Backend:** Laravel
+- **Frontend:** React with Vite
+- **Database:** MySQL
+- **Authentication:** Laravel Sanctum
+- **Styling:** Tailwind CSS
+- **Email Notifications:** Laravel Mail
+
+## Installation
+
+### Prerequisites
+
+- PHP >= 8.x
+- Composer
+- Node.js >= 14.x
+- NPM or Yarn
+- MySQL
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kc-allan/BridgeHealthApp.git
+   cd BridgeHealthApp
+   ```
+
+2. Install backend dependencies:
+
+   ```bash
+   composer install
+   ```
+
+3. Install frontend dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Copy the `.env.example` file to `.env` and configure your environment variables:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Generate the application key:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+6. Run database migrations and seeders:
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. Start the development server:
+
+   ```bash
+   php artisan serve
+   ```
+
+8. In another terminal, start the Vite development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+## Usage
+
+- **Access the application:** Open your browser and navigate to `http://localhost:8000`.
+- **Register and login:** Create an account or log in with your existing credentials.
+- **Manage profiles:** Update your profile information.
+- **Record health logs:** Enter and track health records and symptoms.
+- **Schedule appointments:** Book and manage appointments with doctors.
+- **Access tips and tools:** View personalized tips and tools for managing your pregnancy.
+
+## Contributing
+
+We welcome contributions from the community! To contribute, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Create a new Pull Request.
+
+Please ensure your code follows our coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or support, please contact me at:
+
+- **Email:** [kiruiallan401@gmail.com] [mailto:kiruiallan401@gmail.com]
+
+Thank you for using BridgeHealthApp!
